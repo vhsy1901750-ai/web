@@ -1,26 +1,122 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>내 첫 웹페이지</title>
-  </head>
-  <body>
-    <p class="intro">소개 문단입니다.</p>
-    <div id="header">페이지 상단입니다.</div>
-    <h1>안녕하세요!</h1>
-<div style="border: 1px solid;">
-  <h1>1</h1>
-</div>
-<div style="border: 1px dashed;">
-  <h2>2</h2>
-</div>
-<div style="border: 1px dotted;">
-  <h3>3</h3>
-</div>
-<div style="border: 1px double;">
-  <h4>4</h4>
-</div>
-<div style="border: 1px groove;">
-  <h5>5</h5>
-</div>
-  </body>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>내 첫 웹페이지</title>
+  <style>
+    /* 1. 박스 모델 실습용 CSS */
+    .outer {
+      background: #F1F5FB;       
+      padding: 30px;             
+      margin-top: 20px;
+    }
+
+    .box {
+      width: 120px;
+      padding: 40px;              
+      border: 10px dashed #FF6B57; 
+      margin: 50px;              
+      background: #FFF3E9;       
+    }
+
+    .content {
+      background: #0EA5C4;       
+      color: #fff;
+      text-align: center;
+      padding: 14px 0;
+    }
+
+    /* 2. 세로로 긴 상자 3개 스타일 */
+    .vertical-container {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column; 
+      gap: 12px;
+    }
+
+    .vertical-container > div {
+      padding: 20px;
+      color: white;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+
+    .v-box1 { background-color: #0EA5C4; }
+    .v-box2 { background-color: #0E7490; }
+    .v-box3 { background-color: #172554; }
+
+    /* 3. 미디어 쿼리 적용된 반응형 컨테이너 스타일 */
+    .container {
+      display: flex;
+      flex-direction: row; /* 기본: 가로로 나란히 */
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .container > div {
+      color: white;
+      padding: 20px 30px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .container > div:nth-child(1) { background-color: #0EA5C4; }
+    .container > div:nth-child(2) { background-color: #0E7490; }
+    .container > div:nth-child(3) { background-color: #172554; }
+
+    /* 화면 너비가 600px 이하로 좁아지면 세로로 전환 */
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column; 
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 기존에 작성하셨던 내용들 -->
+  <p class="intro">소개 문단입니다.</p>
+  <div id="header">페이지 상단입니다.</div>
+  <h1>안녕하세요!</h1>
+
+  <div style="border: 1px solid;">
+    <h1>1</h1>
+  </div>
+  <div style="border: 1px dashed;">
+    <h2>2</h2>
+  </div>
+  <div style="border: 1px dotted;">
+    <h3>3</h3>
+  </div>
+  <div style="border: 1px double;">
+    <h4>4</h4>
+  </div>
+  <div style="border: 1px groove;">
+    <h5>5</h5>
+  </div>
+
+  <h1 style="color:#0EA5C4; font-size: 20px;">파란색??</h1>
+
+  <!-- 박스 모델 실습 영역 -->
+  <div class="outer">
+    <div class="box">
+      <div class="content">content</div>
+    </div>
+  </div>
+
+  <!-- 세로로 긴 상자 3개 -->
+  <div class="vertical-container">
+    <div class="v-box1">박스1</div>
+    <div class="v-box2">박스2</div>
+    <div class="v-box3">박스3</div>
+  </div>
+
+  <!-- 미디어 쿼리가 적용된 반응형 박스 영역 -->
+  <div class="container">
+    <div>박스1</div>
+    <div>박스2</div>
+    <div>박스3</div>
+  </div>
+
+</body>
 </html>
