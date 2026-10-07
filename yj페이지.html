@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>나의 페이지</title>
+  <style>
+    #page2 { display: none; }
+    #page2:target { display: block; }
+    #page2:target ~ #page1 { display: none; }
+
+    #page1 h1 { color: #ff4f8b; }
+    #page1 h2 { color: #3a7bd5; }
+    #page2 h1 { color: #e63946; }
+    #page2 h2 { color: #2a9d8f; }
+  </style>
+</head>
+<body>
+  <!-- 두 번째 페이지 -->
+  <div id="page2">
+    <h1>나의 페이지</h1>
+
+    <h2>좋아하는 과일</h2>
+    <ul>
+      <li>딸기</li>
+      <li>복숭아</li>
+    </ul>
+
+    <a href="#page1">첫 페이지로</a>
+  </div>
+
+  <!-- 첫 번째 페이지 -->
+  <div id="page1">
+    <h1>나의 페이지</h1>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg" alt="고양이 사진" width="400">
+
+    <h2>좋아하는 것</h2>
+    <ul>
+      <li>고양이</li>
+      <li>강아지</li>
+    </ul>
+
+    <a href="#page2">다음 페이지로</a>
+  </div>
+</body>
+</html>
