@@ -1,3 +1,5 @@
+<!-- 6주차시 한곳에 저장했습니다... -->
+
 <!DOCTYPE html>
 <html>
 <head> 
@@ -91,7 +93,6 @@
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbiHWYYu5o1aeSjf4gx7qlzc9v0uKD5Z_fCcDqHRfaaw&s=10s" alt="펭귄" width="300">
     <img src="Nothing" alt="그림이 존재하지 않습니다." width="300">
 
-
     <style>
 	h15 { color: red; }
  	p3 { color: blue; }
@@ -153,8 +154,42 @@
     		<h1 class="item header">동해물과 백두산이</h1> 
 	</body>
 
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 Selector Basic</title>
+    <style>
+         h17 { color: red; }
+         p8 { color: blue; }
+
+        
+         box {
+            width: 100px; height: 100px;
+            background-color: red;
+
+            border: 20px solid black;
+            margin: 10px; padding: 30px;
+        }
+
+         .box20 {
+            border-width: thick;
+            border-style: dashed;
+            border-color: black;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h17">제목 글자</h1>
+    <p class="p8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p class="p8">Nunc nisl turpis, aliquet et gravida non, facilisis a sem.</p>
+
+   
+    <div class="box"></div>
+
+    
+    <div class="box20">
+        <h1>Lorem ipsum dolor amet</h1>
+    </div>
 </body>
 </html>
-
-<!-- 6주차시 한곳에 저장했습니다... -->
-
