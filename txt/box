@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS3 Font Property</title>
+    <style>
+  .box {
+ width: 100px; height: 100px;
+ position: absolute;
+ }
+ .box:nth-child(1) { background-color: red; }
+ .box:nth-child(2) { background-color: green; }
+ .box:nth-child(3) { background-color: blue; }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+</body>
+</html>
+<style>
+.box {
+ width: 100px; height: 100px;
+ position: absolute;
+}
+.box:nth-child(1) {
+ background-color: red;
+ left: 10px; top: 10px;
+}
+.box:nth-child(2) {
+ background-color: green;
+ left: 50px; top: 50px;
+}
+.box:nth-child(3) {
+ background-color: blue;
+ left: 90px; top: 90px;
+}
+</style>
+<style>
+.box {
+ width: 100px; height: 100px;
+ position: absolute;
+}
+.box:nth-child(1) {
+ background-color: red;
+ left: 10px; top: 10px;
+ z-index: 100;
+}
+.box:nth-child(2) {
+ background-color: green;
+ left: 50px; top: 50px;
+ z-index: 10;
+
+}
+.box:nth-child(3) {
+ background-color: blue;
+ left: 90px; top: 90px;
+ z-index: 1;
+}
+</style>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>나의 페이지</title>
+  <style>
+    #page2 { display: none; }
+    #page2:target { display: block; }
+    #page2:target ~ #page1 { display: none; }
+
+    #page1 h1 { color: #ff4f8b; }
+    #page1 h2 { color: #3a7bd5; }
+    #page2 h1 { color: #e63946; }
+    #page2 h2 { color: #2a9d8f; }
+  </style>
+</head>
+<body>
+  <!-- 두 번째 페이지 -->
+  <div id="page2">
+    <h1>나의 페이지</h1>
+
+    <h2>좋아하는 과일</h2>
+    <ul>
+      <li>딸기</li>
+      <li>복숭아</li>
+    </ul>
+
+    <a href="#page1">첫 페이지로</a>
+  </div>
+
+  <!-- 첫 번째 페이지 -->
+  <div id="page1">
+    <h1>나의 페이지</h1>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg" alt="고양이 사진" width="400">
+
+    <h2>좋아하는 것</h2>
+    <ul>
+      <li>고양이</li>
+      <li>강아지</li>
+    </ul>
+
+    <a href="#page2">다음 페이지로</a>
+  </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>HTML TEXT Basic Page</title>
+</head>
+<body>
+    <h1 style="color: red;">나의 페이지</h1>
+    <h1>제목 글자</h1> 
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+    <p>Phasellus sem tortor, volutpat vitae euismod eget</p>
+    <h2>제목 글자 태그 1</h2> 
+    <h3>제목 글자 태그 2</h3> 
+    <h4>제목 글자 태그 3</h4> 
+    <h5>제목 글자 태그 4</h5> 
+    <h6>제목 글자 태그 5</h6> 
+    <h7>제목 글자 태그 6</h7>
+    <a href="http://www.hanbit.co.kr">한빛미디어</a><br> 
+    <a href="http://www.naver.com/">네이버</a><br> 
+    <a href="http://www.daum.net/">다음</a><br>
+    <a href="#alpha">Alpha 부분</a> 
+    <a href="#beta">Beta 부분</a> 
+    <a href="#gamma">Gamma 부분</a> 
+    <hr> 
+    <h1 id="alpha">Alpha</h1> 
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+    <h1 id="beta">Beta</h1> 
+    <p>Donec at pharetra orci. Ut tincidunt porta aliquam.</p> 
+    <h1 id="gamma">Gamma</h1> 
+    <p>Integer nibh tellus, tristique quis blandit quis, consequat</p>
+<div class="directory_box _list_area"> 
+    <a class="directory_list _qna_list"> 
+        <li><a href="#">전체</a></li> 
+        <li><a href="#">교육, 학문</a></li> 
+        <li><a href="#">컴퓨터통신</a></li> 
+        <li><a href="#">엔터테인먼트, 예술</a></li> 
+        <li><a href="#">생활</a></li> 
+        <li><a href="#">건강</a></li> 
+    </ul>
+</div>
+
+    <ul> 
+        <li>사과</li> 
+        <li>바나나</li> 
+        <li>오렌지</li> 
+    </ul>
+    <ol> 
+        <li>사과</li> 
+        <li>바나나</li> 
+        <li>오렌지</li> 
+    </ol>
+<body> 
+    <ul> 
+        <!-- 첫 번째 목록 --> 
+        <li> 
+            <b>과일</b> 
+            <ol> 
+                <li>사과</li> 
+                <li>바나나</li> 
+                <li>오렌지</li> 
+            </ol> 
+        </li>
+<li> 
+            <b>채소</b> 
+            <ol> 
+                <li>상추</li> 
+                <li>치커리</li> 
+                <li>양배추</li> 
+            </ol> 
+       </li> 
+    </ul>
+</body>  
+
+    <table border="1"> 
+        <tr> 
+            <th colspan="2">지역별 홍차</th> 
+        </tr> 
+        <tr> 
+            <th rowspan="3">중국</th> 
+            <td>정산소종</td> 
+        </tr> 
+        <tr><td>기문</td></tr> 
+        <tr><td>운남</td></tr> 
+        <tr> 
+            <th rowspan="4">인도 및 스리랑카</th> 
+            <td>아삼</td> 
+        </tr> 
+        <tr><td>실론</td></tr> 
+        <tr><td>다질링</td></tr> 
+        <tr><td>닐기리</td></tr> 
+    </table>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbiHWYYu5o1aeSjf4gx7qlzc9v0uKD5Z_fCcDqHRfaaw&s=10s" alt="펭귄" width="300">
+    <img src="Nothing" alt="그림이 존재하지 않습니다." width="300">
+
+    
+
+<style>
+ 	#header {
+ 	   width: 800px; margin: 0 auto;
+ 	   background: red;
+ 	}
+ 	#wrap {
+ 	   width: 800px; margin: 0 auto;
+ 	   overflow: hidden;
+ 	}
+ 	#aside {
+ 	   width: 200px; float: left;
+ 	   background: blue;
+ 	}
+#content {
+ 	   width: 600px; float: left;
+ 	   background: green;
+ 	}
+   </style>
+</head>
+<body>
+   <div id="header">
+      <h1>#header 태그</h1>
+   </div>
+   <div id="wrap">
+      <div id="aside">
+         <h1>#aside 태그</h1>
+      </div>
+      <div id="content">
+         <h1>#content 태그</h1>
+      </div>
+   </div>
+    <style>
+ 	.select { color: red; }
+    </style>
+</head>
+<body>
+    <ul>
+ 	<li class="select">사과</li>
+ 	<li>바나나</li>
+ 	<li class="select">오렌지</li>
+ 	<li>감</li>
+    </ul>
+<style>
+ 	.item { color: red; }
+ 	.header { background-color: blue; }
+</style>
+	</head>
+	</head>
+	<body>
+    		<h1 class="item header">동해물과 백두산이</h1> 
+	</body>
+
+<head>
+    
+    <style>
+         h17 { color: red; }
+         p8 { color: blue; }
+
+       
+         .box {
+            width: 100px; height: 100px;
+            background-color: red;
+
+            border: 20px solid black;
+            margin: 10px; padding: 30px;
+        }
+
+         .box20 {
+            border-width: thick;
+            border-style: dashed;
+            border-color: black;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h17 >제목 글자</h17>
+    <p8>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p8>
+    <p8>Nunc nisl turpis, aliquet et gravida non, facilisis a sem.</p8>
+
+   
+    <div class="box"></div>
+
+    
+    <div class="box20">
+        <h1>Lorem ipsum dolor amet</h1>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
